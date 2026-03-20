@@ -1199,12 +1199,7 @@
         PC-3 invia un broadcast <strong>DHCP Discover</strong>. Lo Switch 2 lo inonda su tutte le porte. Il router lo riceve su G0/1 e, grazie a <code>ip helper-address</code>, lo incapsula in un pacchetto unicast verso <code>192.168.10.2</code>. Il server DHCP riceve la richiesta, guarda il campo <em>giaddr</em> (<code>192.168.20.1</code>), seleziona il <code>POOL_RETE2</code> e risponde con un indirizzo della Rete 2. Il router riceve la risposta e la inoltra a PC-3.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 11</div>
-        <div class="img-desc">PC-3: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato nella subnet 192.168.20.0/24 (es. 192.168.20.16)</div>
-        <div class="img-num">SCREENSHOT_11 · Inserire qui l'immagine</div>
-      </div>
+      <div class="img-placeholder"><img src = "dhcpPC3.png"></div>
     </section>
 
     <!-- ══ STEP 10 TEST ══ -->
@@ -1224,11 +1219,7 @@
         <li>Ripeti per PC-2, PC-3 e PC-4. I PC sulla Rete 2 devono avere IP nella subnet <code>192.168.20.x</code>.</li>
       </ol>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 12</div>
-        <div class="img-desc">Command Prompt di PC-3 con output di ipconfig: IP 192.168.20.x, subnet mask 255.255.255.0, gateway 192.168.20.1</div>
-        <div class="img-num">SCREENSHOT_12 · Inserire qui l'immagine</div>
+      <div class="img-placeholder"><img src  ="ipConfigPC1.png">
       </div>
 
       <h3>Test B – Ping al gateway</h3>
