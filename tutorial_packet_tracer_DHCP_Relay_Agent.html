@@ -1134,12 +1134,7 @@
         Quando un client sulla Rete 2 invia un <strong>DHCP Discover</strong> (broadcast), il router lo riceve su G0/1. Grazie al relay, il router crea un nuovo pacchetto <strong>unicast</strong> con: sorgente = IP dell'interfaccia G0/1 (<code>192.168.20.1</code>), destinazione = IP del server DHCP (<code>192.168.10.2</code>). Il server risponde al router, che poi smista la risposta al client corretto. Il server capisce a quale pool appartiene la richiesta grazie al campo <em>relay agent IP address</em> nel pacchetto.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 08</div>
-        <div class="img-desc">CLI del router con il comando ip helper-address configurato sull'interfaccia G0/1</div>
-        <div class="img-num">SCREENSHOT_08 · Inserire qui l'immagine</div>
-      </div>
+      <div class="img-placeholder"><img src = "cliIP.png"></div>
 
       <h3>Verifica rapida della configurazione router</h3>
 
